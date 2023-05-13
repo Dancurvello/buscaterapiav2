@@ -28,7 +28,7 @@ const LinkItem = styled.li`
   padding: 0 1.1em;
   color: #222;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 19px;
   display: flex;
   margin-bottom: 10px;
 `;
@@ -55,16 +55,19 @@ export function MobileNavLinks(props) {
       {isOpen && (
         <LinksWrapper>
           <LinkItem>
-            <Link href="#">Home</Link>
+            <Link href={'/Home'}>Home</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="#">Meu Perfil</Link>
+            <Link href={'/MyAccount'}>Meu Perfil</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="#">Favoritos</Link>
+            <Link href={'/Favorites'}>Favoritos</Link>
           </LinkItem>
           <LinkItem>
             <Link href="#">Configuracoes</Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="#">Baixe nosso App</Link>
           </LinkItem>
           <Marginer />
           <Accessibility />

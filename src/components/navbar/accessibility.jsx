@@ -11,7 +11,7 @@ const RegisterButton = styled.button`
   outline: 0;
   padding: 8px 1em;
   color: #fff;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 600;
   border-radius: 20px;
   background-color: #6adf76;
@@ -33,7 +33,7 @@ const LoginButton = styled.button`
   outline: 0;
   padding: 8px 1em;
   color: #222;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 600;
   border-radius: 20px;
   background-color: transparent;

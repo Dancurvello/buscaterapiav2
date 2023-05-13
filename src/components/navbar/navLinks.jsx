@@ -43,16 +43,19 @@ export function NavLinks(props) {
     <NavLinksContainer>
       <LinksWrapper>
         <LinkItem>
-          <Link href="#">Home</Link>
+        <Link href={'/Home'}>Home</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Meu Perfil</Link>
+          <Link href={'/MyAccount'}>Meu Perfil</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Favoritos</Link>
+        <Link href={'/Favorites'}>Favoritos</Link>
         </LinkItem>
         <LinkItem>
           <Link href="#">Configuracoes</Link>
+        </LinkItem>
+        <LinkItem>
+          <Link href="#">Baixe nosso App</Link>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>
