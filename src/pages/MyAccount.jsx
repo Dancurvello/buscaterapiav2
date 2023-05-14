@@ -4,7 +4,9 @@ import React from "react";
 const MyAccount = () => {
     return (
         <>
-        <Navbar/>
+        <div className="App">
+         <Navbar />
+        </div>
         <h1> Seus dados:</h1>
         <label> Nome: Daniel Curvello</label>
         <br></br>

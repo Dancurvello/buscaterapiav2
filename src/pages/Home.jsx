@@ -1,5 +1,7 @@
 
 import React from "react";
+import SearchProfessional from "../components/body/searchProfessional";
+import SelectSpecialty from "../components/body/selectSpecialty";
 import { Navbar } from "../components/navbar";
 
 
@@ -9,11 +11,16 @@ const Home = () => {
         <div className="App">
          <Navbar />
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
+      
         <h1> Pagina inicial</h1>
         <br></br>
         <br></br>
+        <SearchProfessional/>
         <br></br>
-        <br></br>
+        <SelectSpecialty/>
         <br></br>
         <br></br>
         <br></br>
