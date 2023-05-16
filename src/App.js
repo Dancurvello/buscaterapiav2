@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './pages/Home';
 import MyAccount from './pages/MyAccount';
 import Favorites from './pages/Favorites';
+import DownloadApp from './pages/DownloadApp';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/Favorites",
     element: <Favorites/>,
+  },
+  {
+    path: "/DownloadApp",
+    element: <DownloadApp/>,
   }
   
 

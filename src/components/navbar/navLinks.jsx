@@ -55,7 +55,7 @@ export function NavLinks(props) {
           <Link href="#">Configuracoes</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Baixe nosso App</Link>
+          <Link href={'/DownloadApp'}>Baixe nosso App</Link>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>

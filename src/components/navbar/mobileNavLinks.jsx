@@ -15,13 +15,13 @@ const LinksWrapper = styled.ul`
   display: flex;
   height: 100%;
   list-style: none;
-  background-color: #f3e9ff;
-  width: 79%;
+  background-color: #f0f0f0;
+  width: 66%;
   flex-direction: column;
   position: fixed;
   top: 60px;
   left: 0;
-  margin-left: 22vw;
+  margin-left: 34vw;
   justify-items: flex-end;
   box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.5),
               5px 0 5px -5px rgba(0, 0, 0, 0.5);
@@ -73,7 +73,7 @@ export function MobileNavLinks(props) {
             <Link href="#">Configuracoes</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="#">Baixe nosso App</Link>
+            <Link href={'/DownloadApp'}>Baixe nosso App</Link>
           </LinkItem>
           <Marginer />
           <Accessibility />
