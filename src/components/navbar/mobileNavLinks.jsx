@@ -15,17 +15,21 @@ const LinksWrapper = styled.ul`
   display: flex;
   height: 100%;
   list-style: none;
-  background-color: #fff;
-  width: 100%;
+  background-color: #f3e9ff;
+  width: 79%;
   flex-direction: column;
   position: fixed;
-  top: 65px;
+  top: 60px;
   left: 0;
+  margin-left: 22vw;
+  justify-items: flex-end;
+  box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.5),
+              5px 0 5px -5px rgba(0, 0, 0, 0.5);
 `;
 
 const LinkItem = styled.li`
   width: 100%;
-  padding: 0 1.1em;
+  padding: 4px 1.1em;
   color: #222;
   font-weight: 500;
   font-size: 19px;
@@ -53,7 +57,9 @@ export function MobileNavLinks(props) {
     <NavLinksContainer>
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
       {isOpen && (
-        <LinksWrapper>
+        
+        <LinksWrapper>       
+        <div> 
           <LinkItem>
             <Link href={'/Home'}>Home</Link>
           </LinkItem>
@@ -71,7 +77,9 @@ export function MobileNavLinks(props) {
           </LinkItem>
           <Marginer />
           <Accessibility />
+          </div> 
         </LinksWrapper>
+        
       )}
     </NavLinksContainer>
   );

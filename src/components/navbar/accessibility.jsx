@@ -3,7 +3,9 @@ import styled from "styled-components";
 
 const AccessibilityContainer = styled.div`
   display: flex;
-  margin-left: 10px;
+  justify-content: flex-end;
+  margin-left: 2vw; /* ou outro valor que você achar apropriado */
+  padding-right: 18px;
 `;
 
 const RegisterButton = styled.button`
