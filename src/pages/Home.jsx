@@ -17,8 +17,7 @@ const Home = () => {
       
         <h1> Pagina inicial</h1>
         <br></br>
-        <br></br>
-        <SearchProfessional/>
+        
         <br></br>
         <SelectSpecialty/>
         <br></br>

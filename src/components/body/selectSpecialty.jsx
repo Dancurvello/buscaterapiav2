@@ -1,17 +1,22 @@
 import React from "react";
 import { useState } from 'react';
+import './selectSpecialty.css'
+
 
 
 function SelectSpecialty() {
-    const [myCar, setMyCar] = useState("Psicologo");
+    const [myTherapist, setMyTherapist] = useState("");
   
     const handleChange = (event) => {
-      setMyCar(event.target.value)
+      setMyTherapist(event.target.value)
     }
-  
+
+      
     return (
       <form>
-        <select value={myCar} onChange={handleChange}>
+        <label> Escolha a especialidade:</label>
+        <select value={myTherapist} onChange={handleChange}>      
+        <option disabled={true} value=""> Selecione...</option>  
           <option value="Psicologo">Psicologo</option>
           <option value="Fisioterapeuta">Fisioterapeuta</option>
         </select>

@@ -5,8 +5,8 @@ const SearchProfessional = () => {
         <section>
             <form>
                 <label>
-                    Pesquisar
-                    <input type="text" name="searchProfessional" placeholder="Pesquisar o profissional" />
+                    Encontre seu terapeuta:
+                    <input type="text" name="searchProfessional" placeholder="Selecione a especialidade" />
                 </label>
                 <input type="submit" value="Pesquisar" />
                 </form>
