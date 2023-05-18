@@ -1,6 +1,5 @@
 
 import React from "react";
-import SearchProfessional from "../components/body/searchProfessional";
 import SelectSpecialty from "../components/body/selectSpecialty";
 import { Navbar } from "../components/navbar";
 

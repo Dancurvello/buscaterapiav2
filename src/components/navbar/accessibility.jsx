@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { useState } from 'react';
+import { ModalLogin } from "./modalLogin";
 
 const AccessibilityContainer = styled.div`
   display: flex;
@@ -53,11 +55,24 @@ const LoginButton = styled.button`
   }
 `;
 
+
 export function Accessibility(props) {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   return (
     <AccessibilityContainer>
       <RegisterButton>Cadastre-se</RegisterButton>
-      <LoginButton>Login</LoginButton>
+      <LoginButton onClick={openModal}>Login</LoginButton>
+
+      <ModalLogin isOpen={modalIsOpen} closeModal={closeModal}/>
     </AccessibilityContainer>
   );
 }
