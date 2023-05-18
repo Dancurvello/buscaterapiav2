@@ -1,6 +1,8 @@
 import Modal from 'react-modal';
 import React from 'react';
 import './modalLogin.css'
+import { MdClose } from 'react-icons/md';
+
 
 export function ModalLogin({ isOpen, closeModal }) {
 
@@ -40,16 +42,32 @@ export function ModalLogin({ isOpen, closeModal }) {
         margin: '24px 0px 12px',
       };
 
+      const closeButtonStyle = {
+        position: 'absolute',
+        top: '10px',
+        right: '10px',
+        background: 'none',
+        border: 'none',
+        cursor: 'pointer',
+        fontSize: '20px',
+        color: 'rgba(0, 0, 0, 0.5)',
+        padding: '0',
+      };
 
-  return (
-    <Modal style={modalStyle}
-      isOpen={isOpen}
-      onRequestClose={closeModal}
-      contentLabel="Login Modal"
-    >
-      <div style={{ background: 'white' }}>
-      <h1 style={h1Style}>Login</h1>
-      </div>
-    </Modal>
-  );
-}
+
+      return (
+        <Modal
+          isOpen={isOpen}
+          onRequestClose={closeModal}
+          contentLabel="Login Modal"
+          style={modalStyle}
+        >
+          <div style={{ background: 'white' }}>
+            <button style={closeButtonStyle} onClick={closeModal}>
+              <MdClose />
+            </button>
+            <h1 style={h1Style}>Login</h1>
+          </div>
+        </Modal>
+      );
+    }
