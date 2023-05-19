@@ -35,7 +35,7 @@ export function ModalLogin({ isOpen, closeModal }) {
       const h1Style = {
         color: 'rgb(9, 11, 23)',
         textAlign: 'center',
-        fontSize: '24px',
+        fontSize: '34px',
         fontWeight: 600,
         paddingBottom: '25px',
         margin: '-14px 0px 1px',
@@ -47,8 +47,8 @@ export function ModalLogin({ isOpen, closeModal }) {
         fontSize: '15px',
         fontWeight: 600,
         paddingBottom: '25px',
-        margin: '-14px 0px 12px',
-        marginTop: '37px'
+        margin: '25px 0px 12px',
+        
       };
 
       const closeButtonStyle = {
@@ -64,22 +64,55 @@ export function ModalLogin({ isOpen, closeModal }) {
       };
 
       const googleButtonStyle = {
+        display: 'flex',
+        alignItems: 'center',
         background: '#4285F4',
         borderRadius: '20px',
         color: 'white',
         padding: '10px 20px',
         border: 'none',
         cursor: 'pointer',
-        fontSize: '20px'
+        fontSize: '15px',
+        fontWeight: 'bold'
       };
 
+      const containerStyle = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        
+      };
+      
+
       const emailInputStyle = {
-        border: '2px solid #4285F4',
-        borderRadius: '4px',
+        border: '2px solid rgb(85 85 85 / 85%)',
+        borderRadius: '8px',
         padding: '10px',
         marginBottom: '10px',
-        width: '60%',
+        width: '90%',
       };
+
+      const googleIconStyle = {
+        width: '22px',
+        height: '22px',
+        marginRight: '10px',
+        backgroundColor: '#00000',
+        borderRadius: '11px'
+      };
+
+      const entrarButtonStyle = {
+        background: 'white',
+        color: 'black',
+        border: '2px solid dark',
+        borderRadius: '14px',
+        padding: '10px 20px',
+        fontSize: '19px',
+        marginTop: '11px',
+        fontWeight: 'bold',
+        cursor: 'pointer',
+      };
+
+
       
       
 
@@ -98,8 +131,10 @@ export function ModalLogin({ isOpen, closeModal }) {
             </button>
             
             <h1 style={h1Style}>Login</h1>
-            <div style={{ textAlign: 'center' }}>
-            <button style={googleButtonStyle}>Entrar com o Google</button>
+            <div style={containerStyle}>
+            <button style={googleButtonStyle}> 
+            <img src="../../assets/google.png" alt="Google png" style={googleIconStyle}></img>
+            Entrar com o Google</button>
             </div>
             <div>
             <h2 style={h2Style}>OU</h2>
@@ -107,6 +142,9 @@ export function ModalLogin({ isOpen, closeModal }) {
             <div style={{ textAlign: 'center' }}>
               <input type="text" placeholder="Email" style={emailInputStyle}/>
               <input type="password" placeholder="Senha" style={emailInputStyle} />
+            </div>
+            <div style={{ textAlign: 'center' }}>
+            <button style={entrarButtonStyle}>ENTRAR</button>
             </div>
           </div>
         </Modal>
